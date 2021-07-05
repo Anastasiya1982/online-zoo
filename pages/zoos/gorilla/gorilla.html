@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gorilla</title>
+</head>
+
+<body>
+<h1 class="zoo__title">Online Zoo</h1>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="../../../index.html" class="header__logo logo">
+                <img src="../../../assets/zoo-logo.svg" alt="zoo logo">
+            </a>
+            <div class="burger active">
+                <span></span>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list__item"><a href="../../../index.html">About</a></li>
+                    <li class="header__nav-list__item"><a href="../../map/map.html">Мар</a></li>
+                    <li class="header__nav-list__item active"><a href="#">Zoos</a></li>
+                    <li class="header__nav-list__item"><a href="../../../pages/contacts/contacts.html">Contact us</a></li>
+                    <li class="header__nav-list__item"><a
+                            href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo">Design</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="animal">
+    <aside class="toolbar" style="background-image: url('../assets/toolbar-bg.svg');">
+        <ul class="toolbar__list">
+            <li class="toolbar__item"><a href="../aligator/aligator.html">
+                <img src="../assets/alligator.png" alt="">
+                <div class="toolbar__item-title">
+                    <div class="toolbar__item-title__kind">alligator</div>
+                    <div class="toolbar__item-title__location">Florida,<span>usa</span></div>
+                    <button class="watch-btn">Watch online</button>
+                </div>
+            </a></li>
+            <li class="toolbar__item"><a href="../panda/panda.html">
+                <img src="../assets/panda.png" alt="">
+                <div class="toolbar__item-title">
+                    <div class="toolbar__item-title__kind">Panda</div>
+                    <div class="toolbar__item-title__location"><span>China</span></div>
+                    <button class="watch-btn">Watch online</button>
+                </div>
+            </a></li>
+            <li class="toolbar__item"><a href="../eagle/eagle.html">
+                <img src="../assets/eagle.png" alt="">
+                <div class="toolbar__item-title">
+                    <div class="toolbar__item-title__kind">eagle</div>
+                    <div class="toolbar__item-title__location">California, <span>usa</span></div>
+                    <button class="watch-btn">Watch online</button>
+                </div>
+            </a></li>
+            <li class="toolbar__item active"><a href="#">
+                <img src="../assets/gorilla.png" alt="">
+                <div class="toolbar__item-title">
+                    <div class="toolbar__item-title__kind">gorilla</div>
+                    <div class="toolbar__item-title__location">Eastern <span>DRC</span></div>
+                    <button class="watch-btn">Watch online</button>
+                </div>
+            </a></li>
+            <li class="pay-btn"><a href="#">
+                <img src="../assets/pay.svg" alt="">
+            </a></li>
+        </ul>
+    </aside>
+    <div class="container">
+        <div class="animal__inner">
+            <button class="sidebar-btn">
+                <img src="../assets/sidebar.svg" alt="">
+            </button>
+            <h1 class="animal__title">Gorilla</h1>
+            <div class="animal__video">
+                <div class="animal__video-trans">
+                    <iframe src="https://www.youtube.com/embed/672cUSe69J0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="mySlides"></iframe>
+                    <iframe src="https://www.youtube.com/embed/ojwRVDe6ZnA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="mySlides"></iframe>
+                    <iframe src="https://www.youtube.com/embed/672cUSe69J0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="mySlides"></iframe>
+                    <iframe src="https://www.youtube.com/embed/ojwRVDe6ZnA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="mySlides"></iframe>
+                </div>
+                <button class="feed-btn">Feed</button>
+                <div class="animal__preview-list">
+                    <div class="animal__preview-item" data-video="https://www.youtube.com/embed/672cUSe69J0" >
+                        <img src="https://img.youtube.com/vi/672cUSe69J0/mqdefault.jpg" alt="img-preview" onclick="currentSlide(1)">
+                    </div>
+                    <div class="animal__preview-item" data-video="https://www.youtube.com/embed/ojwRVDe6ZnA">
+                        <img src="https://img.youtube.com/vi/ojwRVDe6ZnA/mqdefault.jpg" alt="img-preview" onclick="currentSlide(2)">
+                    </div>
+                    <div class="animal__preview-item" data-video="https://www.youtube.com/embed/672cUSe69J0">
+                        <img src="https://img.youtube.com/vi/672cUSe69J0/mqdefault.jpg" alt="img-preview" onclick="currentSlide(3)">
+                    </div>
+                    <div class="animal__preview-item" data-video="https://www.youtube.com/embed/ojwRVDe6ZnA">
+                        <img src="https://img.youtube.com/vi/ojwRVDe6ZnA/mqdefault.jpg" alt="img-preview" onclick="currentSlide(4)">
+                    </div>
+                </div>
+            </div>
+            <div class="animal__info">
+                <div class="animal__info-top">
+                    <p><span>ZOO: GRACE</span> Center (Kasugho, Eastern DRC)</p>
+                    <p><span>Enclosure type:</span> Imitation of the natural environment</p>
+                </div>
+                <ul class="animal__info-list">
+                    <li class="animal__info-item">
+                        <h2 class="animal__info-item__title">Population</h2>
+                        <p class="animal__info-item__text">
+                            The eastern plains gorilla has a population of 17,000.
+                        </p>
+                        <button class="animal__info-item__button"></button>
+                    </li>
+                    <li class="animal__info-item">
+                        <h2 class="animal__info-item__title">Habitat</h2>
+                        <p class="animal__info-item__text">
+                            The natural habitat of gorillas covers tropical or subtropical forests in sub –
+                            Saharan Africa.
+                        </p>
+                        <button class="animal__info-item__button"></button>
+                    </li>
+                    <li class="animal__info-item">
+                        <h2 class="animal__info-item__title">Nutrition</h2>
+                        <p class="animal__info-item__text">
+                            The basis of gorilla food is plant food. From the plants used, wild celery,
+                            bedstraw, nettle, bamboo shoots, blue pygeum fruits can be distinguished. Fruits and
+                            nuts are an addition to the main diet, while animal food (insects) is a small part
+                            of the menu.
+                        </p>
+                        <button class="animal__info-item__button"></button>
+                    </li>
+                    <li class="animal__info-item">
+                        <h2 class="animal__info-item__title">Interesting facts</h2>
+                        <p class="animal__info-item__text">
+                            The DNA of gorillas is strongly similar to that of humans, 95 to 99% depending on
+                            what is included, and they are the next closest living relatives of humans after
+                            chimpanzees and bonobos.
+                        </p>
+                        <button class="animal__info-item__button"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__background"></div>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__zoo-logo">
+                    <a href="../../../index.html">
+                        <img src="../../../assets/zoo-logo.svg" alt="">
+                    </a>
+                </div>
+                <button class="footer__donate-btn first">Donate for volunteers</button>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="../../../index.html">About</a></li>
+                        <li class="footer__nav-item"><a href="../../contacts/contacts.html">Contact us</a></li>
+                        <li class="footer__nav-item"><a href="../../map/map.html">Мар</a></li>
+                        <li class="footer__nav-item"><a href="#">Feedback</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer__social">
+                    <li class="footer__social-item"><a href="https://www.instagram.com/"><img src="../../../assets/Insta.svg"
+                                                                                              alt=""></a></li>
+                    <li class="footer__social-item"><a href="https://www.facebook.com/"><img src="../../../assets/Facebook.svg"
+                                                                                             alt=""></a></li>
+                    <li class="footer__social-item"><a href="https://twitter.com/"><img src="../../../assets/Twitter.svg"
+                                                                                        alt=""></a></li>
+                    <li class="footer__social-item youtube-btn"><a href="https://www.youtube.com/"><img
+                            src="../../../assets/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-box">
+                    <div class="footer__logo">
+                        <img src="../../../assets/school.svg" alt="" title="Rolling Scopes School" class="footer__school-logo">
+                        <img src="../../../assets/yem.png" alt="" title="Yem Digital" class="footer__yem-logo">
+                    </div>
+                    <button class="footer__donate-btn second">Donate for volunteers</button>
+                </div>
+                <p class="footer__text">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</p>
+                <h3 class="footer__author">Grigoreva Margarita</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+<script  src="../zoos.js"></script>
+<script src="../../../js/main.js"></script>
+</body>
+
+</html>
